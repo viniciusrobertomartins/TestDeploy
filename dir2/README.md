@@ -1,1 +1,1 @@
-# This is a file in the directory 2 and will execute when commit is done
+# This is a file in the directory 2.

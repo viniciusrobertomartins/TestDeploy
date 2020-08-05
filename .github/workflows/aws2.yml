@@ -4,7 +4,9 @@ on:
   push:
     branches: 
       - master
-       
+    paths:
+      - 'dir2/**'
+
 defaults:
     run:
         working-directory: ./dir2 
