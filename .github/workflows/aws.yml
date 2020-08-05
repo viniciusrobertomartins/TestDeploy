@@ -5,6 +5,10 @@ on:
     branches: 
       - master
 
+defaults:
+    run:
+        working-directory: ./dir1      
+
 jobs:
     job1:
         runs-on: ubuntu-16.04
@@ -13,9 +17,8 @@ jobs:
         
         - uses: actions/checkout@master
         - name: dir2 directory
-          run: cat README.md 
-          working-directory: ./dir2
+          run: cat README.md           
         - name: dir1 directory
           run: |
             cat README.md
-          working-directory: ./dir1
+         
