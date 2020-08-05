@@ -5,7 +5,11 @@ on:
     branches: 
       - master
     paths:
-      - 'dir1/**'
+      - '!dir1/**'
+    
+defaults:
+    run:
+        working-directory: ./dir2 
   
 jobs:
     job2:
