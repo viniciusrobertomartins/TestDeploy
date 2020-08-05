@@ -5,7 +5,7 @@ on:
     branches: 
       - master
     paths:
-      - '!dir1/**'
+      - 'dir1/**'
   
 jobs:
     job2:
