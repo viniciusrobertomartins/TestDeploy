@@ -1,0 +1,23 @@
+name: Test working directory
+
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+    job1:
+        runs-on: ubuntu-16.04
+        env: 
+            working-directory: ./dir1
+        
+        steps:
+        
+        - uses: actions/checkout@master
+        - name: dir2 directory
+          run: cat README.md 
+          working-directory: ${{env.working-directory}}
+        - name: dir1 directory
+          run: |
+            cat README.md
+          working-directory: ${{env.working-directory}}
