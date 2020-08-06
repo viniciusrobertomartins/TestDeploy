@@ -1,4 +1,4 @@
-name: Test working directory1
+name: Test working inside directory1
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
      
 jobs:
-    job1:
+    Test:
         runs-on: ubuntu-16.04
                 
         steps:
